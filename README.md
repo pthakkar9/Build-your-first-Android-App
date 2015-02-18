@@ -7,7 +7,7 @@ Metadata
 
 TechCon 2015 is scheduled on Feb 24, 2015. Location is Columbus, OH downtown.
 
-Prezi is available at bit.ly/AndroidatTechCon(bit.ly/AndroidatTechCon)
+Prezi is available at [bit.ly/AndroidatTechCon](bit.ly/AndroidatTechCon)
 
 Source code is here inside the folder
 
