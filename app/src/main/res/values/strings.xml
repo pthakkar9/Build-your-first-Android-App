@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Build-your-first-Android-App</string>
+    <string name="hello_world">This is your first Android App, isn\'t it?</string>
+    <string name="action_settings">Settings</string>
+    <string name="postYammer">Post to Yammer!</string>
+    <string name="seeYammer">See Yammer posts!</string>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="postYammerString">This is where you will post to Yammer</string>
+    <string name="readYammerString">This is where you will post to Yammer</string>
+    <string name="title_activity_read">ReadActivity</string>
+
+</resources>
