@@ -1,17 +1,38 @@
 package com.leacuke.android.build_your_first_android_app;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class PostActivity extends ActionBarActivity {
+
+    Button postYammerButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
+
+        postYammerButton = (Button) findViewById(R.id.goToYammerPost);
+        postYammerButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent shareToYammerIntent = new Intent(Intent.ACTION_SEND);
+                shareToYammerIntent.setType("text/plain");
+                shareToYammerIntent.putExtra(Intent.EXTRA_TEXT, "Just testing android app that participants " +
+                        "will develop in tomorrow's \"Build your first Android App!\" session in " +
+                        "#techcon2015. #learnandroid");
+
+                startActivity(shareToYammerIntent);
+            }
+        });
+
     }
 
 
